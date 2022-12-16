@@ -5,20 +5,19 @@
     <Search :filtered-pictos-by-cat="allPictosByCat" @input="updateQueryString" @select-category="selectCategory" />
     <PictoGrid :filtered-pictos-by-cat="filtered" @open-modal="openModal" />
     <PictoModal v-if="modalVisible" :picto="currentPicto" @close-modal="modalVisible = false" />
-    <Footer />
+    <AppFooter />
   </div>
 </template>
 
-<script lang="ts">
-import Vue from 'vue'
+<script>
 import Navbar from '../components/AppNavbar.vue'
 import Hero from '../components/AppHero.vue'
 import Search from '../components/AppSearch.vue'
 import PictoGrid from '../components/PictoGrid.vue'
 import PictoModal from '../components/PictoModal.vue'
-import Footer from '../components/AppFooter.vue'
+import AppFooter from '../components/AppFooter.vue'
 
-export default Vue.extend({
+export default {
   name: 'IndexPage',
 
   components: {
@@ -27,12 +26,11 @@ export default Vue.extend({
     Search,
     PictoGrid,
     PictoModal,
-    Footer
+    AppFooter
   },
 
   data () {
     return {
-
       allPictosByCat: [
         {
           label: 'Alimentaire',
@@ -103,7 +101,7 @@ export default Vue.extend({
         //   pictos: []
         // }
       ],
-      currentPicto: undefined,
+      currentPicto: '',
       queryString: '',
       selectedCategory: 'Tout',
       modalVisible: false
@@ -133,7 +131,7 @@ export default Vue.extend({
       this.modalVisible = true
     },
 
-    updateQueryString (newString: string) {
+    updateQueryString (newString) {
       this.queryString = newString
     },
 
@@ -141,7 +139,7 @@ export default Vue.extend({
       this.selectedCategory = category
     }
   }
-})
+}
 </script>
 
 <style>
