@@ -2,12 +2,13 @@
   <div class="container">
     <div v-for="cat in filteredPictosByCat" :key="cat.label" class="item">
       <h2 class="category-title">
+        <div class="tiret" />
         {{ cat.label }}
       </h2>
 
       <div class="picto-grid">
-        <div v-for="picto in cat.pictos" :key="picto">
-          <img :src="require(`~/assets/${picto}.png`)" alt="">
+        <div v-for="picto in cat.pictos" :key="picto" @click="openModal(picto)">
+          <img :src="require(`~/assets/${picto}.png`)" alt="picto">
           <h3>{{ picto }}</h3>
         </div>
       </div>
@@ -24,6 +25,12 @@ export default {
       type: Array,
       default: () => []
     }
+  },
+
+  methods: {
+    openModal (picto) {
+      this.$emit('open-modal', picto)
+    }
   }
 }
 </script>
@@ -35,10 +42,21 @@ export default {
   max-width: 1200px;
 
   .category-title {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 600;
     color: #162a48;
     margin: 48px 0 40px;
+    display: flex;
+    align-items: center;
+    // line-height: 2
+
+    .tiret {
+      border-radius: 50%;
+      background: rgb(46, 217, 166);
+      width: 10px;
+      height: 10px;
+      margin-right: 10px;
+    }
   }
 
   .picto-grid {
@@ -74,15 +92,27 @@ export default {
         background: rgb(240, 248, 250);
 
         h3 {
-          color: rgb(35, 105, 210);
+          // color: rgb(35, 105, 210);
+          color: rgb(10, 59, 44);
         }
 
         img {
-          filter: invert(34%) sepia(29%) saturate(6478%) hue-rotate(207deg) brightness(89%) contrast(83%);
+          filter: invert(16%) sepia(29%) saturate(1098%) hue-rotate(111deg) brightness(98%) contrast(95%);
         }
       }
     }
 
+  }
+
+  @media screen and (max-width: 700px) {
+    .picto-grid {
+      gap: 30px;
+
+      div {
+        width: calc(50% - 15px);
+        max-width: 200px;
+      }
+    }
   }
 }
 </style>

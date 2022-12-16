@@ -39,5 +39,11 @@ section {
     }
   }
 
+  @media screen and (max-width: 700px) {
+    .hero {
+      padding-bottom: 100px;
+    }
+  }
+
 }
 </style>

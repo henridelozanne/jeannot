@@ -3,7 +3,9 @@
     <Navbar />
     <Hero />
     <Search :filtered-pictos-by-cat="allPictosByCat" @input="updateQueryString" @select-category="selectCategory" />
-    <PictoGrid :filtered-pictos-by-cat="filtered" />
+    <PictoGrid :filtered-pictos-by-cat="filtered" @open-modal="openModal" />
+    <PictoModal v-if="modalVisible" :picto="currentPicto" @close-modal="modalVisible = false" />
+    <Footer />
   </div>
 </template>
 
@@ -13,6 +15,8 @@ import Navbar from '../components/AppNavbar.vue'
 import Hero from '../components/AppHero.vue'
 import Search from '../components/AppSearch.vue'
 import PictoGrid from '../components/PictoGrid.vue'
+import PictoModal from '../components/PictoModal.vue'
+import Footer from '../components/AppFooter.vue'
 
 export default Vue.extend({
   name: 'IndexPage',
@@ -21,7 +25,9 @@ export default Vue.extend({
     Navbar,
     Hero,
     Search,
-    PictoGrid
+    PictoGrid,
+    PictoModal,
+    Footer
   },
 
   data () {
@@ -97,8 +103,10 @@ export default Vue.extend({
         //   pictos: []
         // }
       ],
+      currentPicto: undefined,
       queryString: '',
-      selectedCategory: 'Tout'
+      selectedCategory: 'Tout',
+      modalVisible: false
     }
   },
 
@@ -120,6 +128,11 @@ export default Vue.extend({
   },
 
   methods: {
+    openModal (picto) {
+      this.currentPicto = picto
+      this.modalVisible = true
+    },
+
     updateQueryString (newString: string) {
       this.queryString = newString
     },
@@ -142,7 +155,7 @@ html {
 }
 
 * {
-  transition: all 0.5s ease;
+  transition: all 0.3s ease;
 }
 
 .app-container {

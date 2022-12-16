@@ -13,7 +13,7 @@
 
     <div class="input-ctn">
       <SearchIcon />
-      <input v-model="queryString" type="text" placeholder="Rechercher un pictogramme" @input="filterPictos">
+      <input v-model="queryString" type="text" :placeholder="`Rechercher parmi ${pictosQuantity} pictogrammes`" @input="filterPictos">
     </div>
   </div>
 </template>
@@ -40,6 +40,14 @@ export default {
     }
   },
 
+  computed: {
+    pictosQuantity () {
+      return this.filteredPictosByCat.reduce((acc, curr) => {
+        return acc + curr.pictos.length
+      }, 0)
+    }
+  },
+
   methods: {
     filterPictos () {
       this.$emit('input', this.queryString)
@@ -61,8 +69,8 @@ export default {
   width: 80%;
   max-width: 1200px;
   transform: translateY(-30px);
-  border-radius: 2px;
-  box-shadow: 0 3px 22px rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
   background: white;
   margin: 0 auto;
   top: 30px;
@@ -83,6 +91,10 @@ export default {
 
     &:focus {
       outline-width: 0;
+    }
+
+    &:hover {
+      color: black;
     }
   }
 
@@ -118,9 +130,33 @@ export default {
           font-weight: 200;
           font-size: 16px;
           color: #a3a3a3;
+          transition: color 0.3s ease;
+      }
+    }
+
+    &:hover {
+      input::placeholder {
+        color: black;
       }
     }
   }
 
+}
+
+@media screen and (max-width: 700px) {
+  .search {
+    flex-direction: column;
+    align-items: flex-start;
+    transform: translateY(-50px);
+    top: 50px;
+
+    select {
+      width: 100%;
+    }
+
+    .separator {
+      display: none;
+    }
+  }
 }
 </style>
