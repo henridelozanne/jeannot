@@ -1,0 +1,37 @@
+<template>
+  <nav>
+    <h1 class="website-title">
+      Auticto
+    </h1>
+  </nav>
+</template>
+
+<script>
+export default {
+  name: 'AppNavbar'
+}
+</script>
+
+<style lang="scss">
+nav {
+  padding: 20px 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  position: relative;
+
+  .website-title {
+    cursor: pointer;
+    text-transform: uppercase;
+    margin: 0;
+    font-size: 1.2rem;
+    text-underline-offset: 3px;
+    transition: all 1s ease;
+    font-weight: 700;
+    font-size: 1rem;
+    letter-spacing: 4px;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+</style>
