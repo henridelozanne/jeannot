@@ -96,9 +96,9 @@ export default {
           color: rgb(10, 59, 44);
         }
 
-        img {
-          filter: invert(16%) sepia(29%) saturate(1098%) hue-rotate(111deg) brightness(98%) contrast(95%);
-        }
+        // img {
+          // filter: invert(16%) sepia(29%) saturate(1098%) hue-rotate(111deg) brightness(98%) contrast(95%);
+        // }
       }
     }
 

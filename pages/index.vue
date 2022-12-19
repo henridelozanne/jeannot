@@ -33,73 +33,77 @@ export default {
     return {
       allPictosByCat: [
         {
+          label: 'Actions',
+          pictos: ['boire', 'dessiner', 'dormir', 'ecrire', 'faire des bulles', 'jouer', 'lire', 'manger', 'raconter une histoire', 'se coucher', 'se lever']
+        },
+        {
+          label: 'Activités',
+          pictos: ['activité théâtre', 'arts plastiques', 'classe', 'courses', 'danse', 'équithérapie', 'jardinage', 'jouer', 'musique', 'pause', 'piscine', 'promenade', 'psychomotricité', 'regroupement', 'sport', 'travailler']
+        },
+        {
           label: 'Alimentaire',
-          pictos: ['kiwi', 'citron', 'carotte', 'poisson', 'nourriture', 'milk-shake', 'salade']
+          pictos: ['ananas', 'banane', 'bonbon', 'bouteille', "broc d'eau", 'carotte', 'céréales', 'chips', 'compote', 'confiture', 'couteau', 'cuillère', 'cuisiner', 'eau', 'fourchette', 'fromage', 'gâteau', 'goûter', 'miel', 'nesquik', 'nutella', 'pain', 'petit-déjeuner', 'pomme', 'raisin', 'repas', 'tisane', 'yahourt']
         },
         {
-          label: 'Sports',
-          pictos: ['cycle', 'badminton', 'basketball', 'bowling', 'boxe', 'football', 'golf', 'ping-pong', 'rugby', 'tir-a-larc', 'volley']
-        },
-        {
-          label: 'Animaux et végétaux',
-          pictos: ['chien', 'insecte', 'oiseau', 'serpent', 'vache']
+          label: 'Animaux',
+          pictos: ['chat', 'chien', 'coccinelle', 'oiseau', 'papillon', 'poisson', 'vache']
         },
         {
           label: 'Chiffres et lettres',
-          pictos: ['1', '2', '3', '4', '5', '6', '7', '8', '9']
+          pictos: ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
+        },
+        {
+          label: 'Concept',
+          pictos: ['absent', 'empiler', 'autres', 'imprévu', 'personne absente', 'retard']
+        },
+        {
+          label: 'Repères spatiaux',
+          pictos: ['à côté', "à l'intérieur", 'derrière', 'dessous', 'dessus', 'devant', 'entre']
+        },
+        {
+          label: 'Écran',
+          pictos: ['jeanne ordi', 'jeanne téléphone', 'julien ordi', 'ordinateur', 'tablette', 'télévision', 'téléphone']
+        },
+        {
+          label: 'Formes de base',
+          pictos: ['coeur', 'étoile', 'triangle']
+        },
+        {
+          label: 'Hygiène',
+          pictos: ['brosse à dents', 'douche', 'laver les mains', 'prendre le bain', 'toilettes']
+        },
+        {
+          label: 'Lieux',
+          pictos: ['au travail', 'cour haut', 'cour des petits', 'cour du bas', 'école', 'hôpital', 'infirmerie', 'maison', 'récréation', 'salle de consultation', 'salle de retour au calme', 'salle polyvalente']
+        },
+        {
+          label: 'Matières scolaires',
+          pictos: ['anglais', 'date', 'mathématiques', 'poésie']
+        },
+        {
+          label: 'Médical',
+          pictos: ['gel hydroalcoolique', 'masque chirurgical', 'pansement']
+        },
+        {
+          label: 'Objets',
+          pictos: ['ballon de baudruche', 'ballon', 'bulle', 'cartes', 'chaise', 'ciseaux', 'clé', 'crayon', 'cube', 'emploi du temps', 'fleur', 'gomme', 'grande poubelle', 'lego', 'porte-manteau vide', 'porte-manteau', 'poubelle', 'puzzle', 'raquette', 'sablier', 'sac à dos', 'scotch', 'table', 'tasse', 'tipi', 'trampoline', 'trotinette', 'trousse', 'vélo']
+        },
+        {
+          label: 'Sensoriel',
+          pictos: ['mains sur la tête', 'pression pied']
+        },
+        {
+          label: 'Temps',
+          pictos: ['pluie']
         },
         {
           label: 'Transport et véhicules',
-          pictos: ['auto', 'avion', 'bus', 'camion', 'fusee', 'helicoptere', 'cycle']
+          pictos: ['ambulance', 'bus', 'camion', 'hélicoptère', 'metro indisponible', 'metro', 'metro signe', 'taxi', 'train', 'train 2', 'tramway indisponible', 'tramway signe', 'tramway', 'voiture', 'voiture indisponible']
+        },
+        {
+          label: 'Vestimentaire',
+          pictos: ['bonnet', 'casquette', 'chaussure', 'chemise', 'couche', 'enlever la couche', 'pantalon', 'pull', 'slip culotte', 't-shirt']
         }
-        // {
-        //   label: 'Concepts',
-        //   pictos: []
-        // },
-        // {
-        //   label: 'Hygiène',
-        //   pictos: []
-        // },
-        // {
-        //   label: 'Action',
-        //   pictos: []
-        // },
-        // {
-        //   label: 'Activités',
-        //   pictos: []
-        // },
-        // {
-        //   label: 'Lieux',
-        //   pictos: []
-        // },
-        // {
-        //   label: 'Objets',
-        //   pictos: []
-        // },
-        // {
-        //   label: 'demandes',
-        //   pictos: []
-        // },
-        // {
-        //   label: 'Pays',
-        //   pictos: []
-        // },
-        // {
-        //   label: 'Famille',
-        //   pictos: []
-        // },
-        // {
-        //   label: 'Animaux',
-        //   pictos: []
-        // },
-        // {
-        //   label: 'Métiers',
-        //   pictos: []
-        // },
-        // {
-        //   label: 'Boissons',
-        //   pictos: []
-        // }
       ],
       currentPicto: '',
       queryString: '',
