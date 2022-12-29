@@ -34,7 +34,7 @@ export default {
       allPictosByCat: [
         {
           label: 'Actions',
-          pictos: ['boire', 'dessiner', 'dormir', 'ecrire', 'faire des bulles', 'jouer', 'lire', 'manger', 'raconter une histoire', 'se coucher', 'se lever']
+          pictos: ['boire', 'dessiner', 'ecrire', 'faire des bulles', 'jouer', 'lire', 'manger', 'raconter une histoire']
         },
         {
           label: 'Activités',
@@ -54,7 +54,7 @@ export default {
         },
         {
           label: 'Concept',
-          pictos: ['absent', 'empiler', 'autres', 'imprévu', 'personne absente', 'retard']
+          pictos: ['absent', 'empiler', 'autres', 'personne absente', 'retard']
         },
         {
           label: 'Repères spatiaux',
@@ -62,7 +62,7 @@ export default {
         },
         {
           label: 'Écran',
-          pictos: ['jeanne ordi', 'jeanne téléphone', 'julien ordi', 'ordinateur', 'tablette', 'télévision', 'téléphone']
+          pictos: ['ordinateur', 'tablette', 'télévision', 'téléphone']
         },
         {
           label: 'Formes de base',
