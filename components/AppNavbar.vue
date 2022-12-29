@@ -1,19 +1,26 @@
 <template>
   <nav>
-    <h1 class="website-title">
-      <ImagesIcon />
-      Auticto
-    </h1>
+    <div class="logo-and-text">
+      <div class="logo-ctn">
+        <div class="circle" />
+        <div class="circle" />
+
+        <span>A</span>
+        <span class="espelet">&</span>
+        <span>A</span>
+      </div>
+
+      <h1 class="website-title">
+        Autism & Advice
+      </h1>
+    </div>
   </nav>
 </template>
 
 <script>
-import ImagesIcon from './ImagesIcon.vue'
 
 export default {
-  name: 'AppNavbar',
-
-  components: { ImagesIcon }
+  name: 'AppNavbar'
 }
 </script>
 
@@ -23,33 +30,68 @@ nav {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
   position: relative;
 
-  .website-title {
+  .logo-and-text {
+    width: fit-content;
     cursor: pointer;
-    text-transform: uppercase;
-    margin: 0;
-    font-size: 1.2rem;
-    text-underline-offset: 3px;
-    transition: all 1s ease;
-    font-weight: 700;
-    font-size: 1rem;
-    letter-spacing: 4px;
-    display: flex;
-    align-items: center;
 
-    svg {
-      width: 30px;
-      margin-right: 10px;
-    }
+    .logo-ctn {
+      position: relative;
+      width: fit-content;
+      margin: 0 auto;
+      width: 80px;
+      height: 40px;
 
-    &:hover {
-      color: rgb(20, 98, 77);
+      .circle {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: 1px solid black;
+        position: absolute;
+        box-sizing: border-box;
 
-      svg {
-        fill: rgb(20, 98, 77);
-        transform: rotate(-10deg);
+        &:first-of-type {
+          left: 8px;
+        }
+
+        &:last-of-type {
+          right: 8px;
+        }
       }
 
+      span {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+
+        &:first-of-type {
+          left: 17px;
+        }
+
+        &:last-of-type {
+          right: 17px;
+        }
+
+        &.espelet {
+          font-size: 0.7rem;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+    }
+
+    .website-title {
+      cursor: pointer;
+      text-transform: uppercase;
+      margin: 0;
+      font-size: 0.6rem;
+      text-underline-offset: 3px;
+      transition: all 1s ease;
+      font-weight: 700;
+      letter-spacing: 4px;
+      margin-top: 5px;
+      text-align: center;
     }
   }
+
 }
 </style>
