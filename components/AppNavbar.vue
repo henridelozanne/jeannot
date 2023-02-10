@@ -1,6 +1,6 @@
 <template>
   <nav>
-    <div class="logo-and-text">
+    <div class="logo-and-text" @click="goToHome">
       <div class="logo-ctn">
         <div class="circle" />
         <div class="circle" />
@@ -20,7 +20,13 @@
 <script>
 
 export default {
-  name: 'AppNavbar'
+  name: 'AppNavbar',
+
+  methods: {
+    goToHome () {
+      this.$router.push('/')
+    }
+  }
 }
 </script>
 
@@ -60,7 +66,7 @@ nav {
 
       span {
         position: absolute;
-        top: 50%;
+        top: 49%;
         transform: translateY(-50%);
 
         &:first-of-type {
