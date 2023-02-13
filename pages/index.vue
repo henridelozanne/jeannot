@@ -138,6 +138,7 @@ export default {
 </script>
 
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&family=Ubuntu:wght@400;500;700;&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 
 body,
