@@ -1,15 +1,15 @@
 <template>
   <section>
     <div class="hero">
-      <h1>La banque de pictogrammes adaptés aux personnes autistes</h1>
-      <h4>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis quidem possimus iure officiis corrupti ipsum itaque, veritatis nesciunt? Corrupti blanditiis doloremque incidunt modi! Dolorum, hic quos? Harum aliquid eum id</h4>
+      <h1>Auticto, la banque de pictogrammes adaptés aux personnes autistes</h1>
+      <h4>Autism & Advice a développé la banque de pictogrammes s'adaptant au besoin neuro-cognitif de la personne avec autisme.</h4>
     </div>
   </section>
 </template>
 
 <script>
 export default {
-  name: 'AppHero'
+  name: 'AutictoHero'
 }
 </script>
 

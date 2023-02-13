@@ -1,11 +1,31 @@
 <template>
   <section>
     <div class="hero">
-      <h1>Auticto</h1>
+      <h1>AUTISM & ADVICE</h1>
       <ul>
         <li><a href="">Qui sommes-nous ?</a></li>
         <li><a href="">Contact</a></li>
         <li><a href="">Mentions légales</a></li>
+        <li>
+          <router-link to="/">
+            homepage 1
+          </router-link>
+        </li>
+        <li>
+          <router-link to="/home-2">
+            homepage 2
+          </router-link>
+        </li>
+        <li>
+          <router-link to="/home-3">
+            homepage 3
+          </router-link>
+        </li>
+        <li>
+          <router-link to="/home-4">
+            homepage 4
+          </router-link>
+        </li>
       </ul>
     </div>
   </section>
@@ -19,18 +39,16 @@ export default {
 
 <style lang="scss" scoped>
 section {
-  background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(234,249,249,0.67) 0.1%, rgba(239,249,251,0.63) 90.1% );
-  margin-top: 60px;
+  background: white;
 
   .hero {
     margin: 0 auto;
     width: 80%;
     max-width: 1200px;
-    // text-align: right;
     padding: 70px 0;
 
     h1 {
-      padding-left: 40px;
+      padding-left: 0;
       text-transform: uppercase;
       font-size: 1.2rem;
       letter-spacing: 2px;
@@ -39,6 +57,7 @@ section {
 
     ul {
       list-style-type: none;
+      padding-left: 0;
 
       li:not(:first-of-type) {
         margin-top: 12px;

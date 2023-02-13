@@ -1,3 +1,4 @@
+
 <template>
   <div class="app-container">
     <Navbar />
@@ -8,11 +9,11 @@
 
 <script>
 import Navbar from '../components/AppNavbar.vue'
-import Hero from '../components/HomeHero2.vue'
+import Hero from '../components/HomeHero4.vue'
 import AppFooter from '../components/AppFooter.vue'
 
 export default {
-  name: 'Home2',
+  name: 'IndexPage',
 
   components: {
     Navbar,
@@ -137,7 +138,8 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&family=Ubuntu:wght@400;500;700;&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 
 body,

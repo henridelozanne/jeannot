@@ -40,6 +40,10 @@ nav {
     width: fit-content;
     cursor: pointer;
 
+    &:hover {
+      opacity: 0.65;
+    }
+
     .logo-ctn {
       position: relative;
       width: fit-content;

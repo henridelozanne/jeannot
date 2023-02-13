@@ -2,21 +2,30 @@
   <div class="app-container">
     <Navbar />
     <Hero />
+    <Search :filtered-pictos-by-cat="allPictosByCat" @input="updateQueryString" @select-category="selectCategory" />
+    <PictoGrid :filtered-pictos-by-cat="filtered" @open-modal="openModal" />
+    <PictoModal v-if="modalVisible" :picto="currentPicto" @close-modal="modalVisible = false" />
     <AppFooter />
   </div>
 </template>
 
 <script>
 import Navbar from '../components/AppNavbar.vue'
-import Hero from '../components/HomeHero2.vue'
+import Hero from '../components/AutictoHero.vue'
+import Search from '../components/AppSearch.vue'
+import PictoGrid from '../components/PictoGrid.vue'
+import PictoModal from '../components/PictoModal.vue'
 import AppFooter from '../components/AppFooter.vue'
 
 export default {
-  name: 'Home2',
+  name: 'IndexPage',
 
   components: {
     Navbar,
     Hero,
+    Search,
+    PictoGrid,
+    PictoModal,
     AppFooter
   },
 
