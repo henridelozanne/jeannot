@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/auticto", {data:[{}],fetch:{},mutations:void 0});
