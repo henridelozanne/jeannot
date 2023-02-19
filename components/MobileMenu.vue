@@ -13,7 +13,7 @@
     </li>
 
     <li @click="closeMenu">
-      <a href="mailto:“adresse-mail-a-me-donner@gmail.com”">Contact</a>
+      <a href="mailto:autismnadvice@gmail.com”">Contact</a>
     </li>
   </ul>
 </template>
