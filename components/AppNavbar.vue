@@ -1,5 +1,5 @@
 <template>
-  <nav>
+  <nav :class="{'mobile-menu-opened': mobileMenuIsOpened}">
     <div class="logo-and-text" @click="goToHome">
       <div class="logo-ctn">
         <div class="circle" />
@@ -14,6 +14,25 @@
         Autism & Advice
       </h1>
     </div>
+
+    <NavMenuMobile class="mobile-menu" :is-opened="mobileMenuIsOpened" @toggle-mobile-menu="toggleMobileMenu" />
+    <ul class="desktop-menu">
+      <li>
+        <router-link to="/">
+          Présentation
+        </router-link>
+      </li>
+
+      <li>
+        <router-link to="/auticto">
+          Auticto
+        </router-link>
+      </li>
+
+      <li>
+        <a href="mailto:“adresse-mail-a-me-donner@gmail.com”">Contact</a>
+      </li>
+    </ul>
   </nav>
 </template>
 
@@ -22,9 +41,20 @@
 export default {
   name: 'AppNavbar',
 
+  props: {
+    mobileMenuIsOpened: {
+      type: Boolean,
+      default: false
+    }
+  },
+
   methods: {
     goToHome () {
       this.$router.push('/')
+    },
+
+    toggleMobileMenu (value) {
+      this.$emit('toggle-mobile-menu', value)
     }
   }
 }
@@ -35,6 +65,47 @@ nav {
   padding: 20px 30px 20px 40px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 97px;
+  box-sizing: border-box;
+
+  .desktop-menu {
+    display: none;
+    list-style-type: none;
+  }
+
+  @media screen and (min-width: 768px) {
+    .desktop-menu {
+      display: flex;
+
+      a {
+        text-decoration: none;
+        color: #646668;
+      }
+
+      li:not(:first-of-type) {
+        margin-left: 30px;
+      }
+
+      li:hover {
+        opacity: 70%;
+      }
+    }
+
+    .mobile-menu {
+      display: none;
+    }
+  }
+
+  &.mobile-menu-opened {
+    box-shadow: none;
+
+    .logo-and-text {
+      opacity: 0;
+    }
+  }
 
   .logo-and-text {
     width: fit-content;

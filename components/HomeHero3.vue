@@ -4,7 +4,7 @@
       <h1>S'allier pour avancer</h1>
 
       <h4>
-        Le cabinet Autisme & Advice est un cabinet de conseil et d’accompagnement pour les structures, les familles ou les professionnels accompagnant les personnes avec autisme quel que soit l’âge. <span>
+        Le cabinet Autism & Advice est un cabinet de conseil et d’accompagnement pour les structures, les familles ou les professionnels accompagnant les personnes avec autisme quel que soit l’âge. <span>
           Afin de mieux accompagner, le cabinet A&A met à votre disposition
           <span class="auticto-word" @click="goToAuticto">AUTICTO</span>, la banque de pictogrammes adaptée aux personnes avec autisme.
         </span>
@@ -25,7 +25,7 @@
             </p>
           </div>
           <p class="say">
-            « Je suis psychologue clinicienne depuis plus de 10 ans avec 8 ans de spécialisation en autisme. Sensibilisée et supervisée à la pratique de l’ABA pendant 3 années, j’ai ensuite été formée pendant 3 ans et demi à la méthode SACCADE. Spécialiste de l’autisme, je mets en avant mes compétences de psychologue (test psychologique, entretien parentale, analyse du fonctionnement de la personne autiste, restitution sous forme de bilan…). J’essayerai de vous apporter soutien et écoute tout au long de notre alliance. »
+            « Je suis psychologue clinicienne depuis plus de 10 ans avec 8 ans de spécialisation en autisme. Sensibilisée et supervisée à la pratique de l’ABA pendant 3 années, j’ai ensuite été formée pendant 3 ans et demi à la méthode SACCADE. Spécialiste de l’autisme, je mets en avant mes compétences de psychologue (test psychologique, entretien parental, analyse du fonctionnement de la personne autiste, restitution sous forme de bilan…). J’essayerai de vous apporter soutien et écoute tout au long de notre alliance. »
           </p>
         </div>
 

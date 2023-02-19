@@ -4,13 +4,13 @@
       <h1>S'allier pour <span class="special">Avancer</span></h1>
 
       <h4>
-        Le cabinet Autisme & Advice est un cabinet de conseil et d’accompagnement pour les structures, les familles ou les professionnels accompagnant les personnes avec autisme quel que soit l’âge.
+        Le cabinet Autism & Advice est un cabinet de conseil et d’accompagnement pour les structures, les familles ou les professionnels accompagnant les personnes avec autisme quel que soit l’âge.
       </h4>
 
       <div class="around">
         <SolutionSVG />
         <p>
-          Evelyn : « Je suis psychologue clinicienne depuis plus de 10 ans avec 8 ans de spécialisation en autisme. Sensibilisée et supervisée à la pratique de l’ABA pendant 3 années, j’ai ensuite été formée pendant 3 ans et demi à la méthode SACCADE. Spécialiste de l’autisme, je mets en avant mes compétences de psychologue (test psychologique, entretien parentale, analyse du fonctionnement de la personne autiste, restitution sous forme de bilan…). J’essayerai de vous apporter soutien et écoute tout au long de notre alliance. »
+          Evelyn : « Je suis psychologue clinicienne depuis plus de 10 ans avec 8 ans de spécialisation en autisme. Sensibilisée et supervisée à la pratique de l’ABA pendant 3 années, j’ai ensuite été formée pendant 3 ans et demi à la méthode SACCADE. Spécialiste de l’autisme, je mets en avant mes compétences de psychologue (test psychologique, entretien parental, analyse du fonctionnement de la personne autiste, restitution sous forme de bilan…). J’essayerai de vous apporter soutien et écoute tout au long de notre alliance. »
         </p>
         <p>
           Jeanne : « Je suis éducatrice spécialisée depuis 7 ans, j’ai tout de suite été attirée par le milieu de l’autisme. Je me suis d’abord formée à la méthode ABA pendant 2 ans et ai été supervisée tout au long par une psychologue ABA- BCBA. J’ai ensuite été formée à la méthode SACCADE pendant 3 ans et demi. J’ai pu créer de nombreux supports afin d’apporter dans ma pratique une technicité propre à la complexité de l’autisme, alliant connaissance du terrain et analyse neurocognitive. Je tenterai alors de vous accompagner au mieux dans tout le suivi de prise en charge de votre enfant.»

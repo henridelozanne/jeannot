@@ -4,7 +4,7 @@
       <h1>S'allier pour <span class="special">Avancer</span></h1>
 
       <h4>
-        Le cabinet Autisme & Advice est un cabinet de conseil et d’accompagnement pour les structures, les familles ou les professionnels accompagnant les personnes avec autisme quel que soit l’âge.
+        Le cabinet Autism & Advice est un cabinet de conseil et d’accompagnement pour les structures, les familles ou les professionnels accompagnant les personnes avec autisme quel que soit l’âge.
       </h4>
 
       <div class="around">

@@ -1,8 +1,11 @@
 <template>
   <div class="app-container">
-    <Navbar />
-    <Hero />
-    <AppFooter />
+    <Navbar :mobile-menu-is-opened="mobileMenuIsOpened" @toggle-mobile-menu="toggleMobileMenu" />
+    <div v-if="!mobileMenuIsOpened">
+      <Hero />
+      <AppFooter />
+    </div>
+    <MobileMenu v-else @toggle-mobile-menu="toggleMobileMenu" />
   </div>
 </template>
 
@@ -22,6 +25,7 @@ export default {
 
   data () {
     return {
+      mobileMenuIsOpened: false,
       allPictosByCat: [
         {
           label: 'Actions',
@@ -132,6 +136,10 @@ export default {
 
     selectCategory (category) {
       this.selectedCategory = category
+    },
+
+    toggleMobileMenu (value) {
+      this.mobileMenuIsOpened = value
     }
   }
 }
