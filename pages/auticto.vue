@@ -54,7 +54,7 @@ export default {
         },
         {
           label: 'Concept',
-          pictos: ['absent', 'empiler', 'autres', 'personne absente', 'retard']
+          pictos: ['empiler', 'retard']
         },
         {
           label: 'Repères spatiaux',
@@ -94,7 +94,7 @@ export default {
         },
         {
           label: 'Temps',
-          pictos: ['pluie']
+          pictos: ['soleil', 'pluie', 'neige', 'nuage']
         },
         {
           label: 'Transport et véhicules',
