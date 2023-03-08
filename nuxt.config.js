@@ -19,6 +19,14 @@ export default {
     ]
   },
 
+  googleFonts: {
+    families: {
+      Ubuntu: {
+        wght: [200, 400, 600, 700]
+      }
+    }
+  },
+
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
   ],
