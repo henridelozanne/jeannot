@@ -4,28 +4,8 @@
       <h1>AUTISM & ADVICE</h1>
       <ul>
         <li><a href="">Qui sommes-nous ?</a></li>
-        <li><a href="">Contact</a></li>
-        <li><a href="">Mentions légales</a></li>
-        <li>
-          <router-link to="/">
-            homepage 1
-          </router-link>
-        </li>
-        <li>
-          <router-link to="/home-2">
-            homepage 2
-          </router-link>
-        </li>
-        <li>
-          <router-link to="/home-3">
-            homepage 3
-          </router-link>
-        </li>
-        <li>
-          <router-link to="/home-4">
-            homepage 4
-          </router-link>
-        </li>
+        <li><a target="_blank" href="mailto:autismnadvice@gmail.com”">Contact</a></li>
+        <li><a href="#">Mentions légales</a></li>
       </ul>
     </div>
   </section>

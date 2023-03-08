@@ -30,7 +30,7 @@
       </li>
 
       <li>
-        <a href="mailto:autismnadvice@gmail.com”">Contact</a>
+        <a target="_blank" href="mailto:autismnadvice@gmail.com”">Contact</a>
       </li>
     </ul>
   </nav>

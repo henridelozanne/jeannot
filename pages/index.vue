@@ -1,21 +1,23 @@
 <template>
   <div class="app-container">
     <Navbar :mobile-menu-is-opened="mobileMenuIsOpened" @toggle-mobile-menu="toggleMobileMenu" />
+
     <div v-if="!mobileMenuIsOpened">
       <Hero />
       <AppFooter />
     </div>
+
     <MobileMenu v-else @toggle-mobile-menu="toggleMobileMenu" />
   </div>
 </template>
 
 <script>
 import Navbar from '../components/AppNavbar.vue'
-import Hero from '../components/HomeHero2.vue'
+import Hero from '../components/HomeHero.vue'
 import AppFooter from '../components/AppFooter.vue'
 
 export default {
-  name: 'Home2',
+  name: 'IndexPage',
 
   components: {
     Navbar,

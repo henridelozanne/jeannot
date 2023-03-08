@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/home-2", {data:[{}],fetch:{},mutations:void 0});
