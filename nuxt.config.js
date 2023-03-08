@@ -19,14 +19,6 @@ export default {
     ]
   },
 
-  googleFonts: {
-    families: {
-      Ubuntu: {
-        wght: [200, 400, 600, 700]
-      }
-    }
-  },
-
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
   ],
@@ -41,7 +33,25 @@ export default {
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
     // https://go.nuxtjs.dev/typescript
-    '@nuxt/typescript-build'
+    '@nuxt/typescript-build',
+
+    [
+      '@nuxtjs/google-fonts',
+      {
+        families: {
+          Ubuntu: {
+            wght: [200, 400, 600, 700]
+          }
+        },
+        subsets: ['latin'],
+        display: 'swap',
+        prefetch: false,
+        preconnect: false,
+        preload: false,
+        download: true,
+        base64: false
+      }
+    ]
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
