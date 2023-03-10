@@ -64,7 +64,6 @@ export default {
 nav {
   padding: 20px 30px 20px 40px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
-  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -105,6 +104,10 @@ nav {
     .logo-and-text {
       opacity: 0;
     }
+  }
+
+  &:not(.mobile-menu-opened) {
+    background: white;
   }
 
   .logo-and-text {

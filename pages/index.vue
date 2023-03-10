@@ -1,8 +1,8 @@
 <template>
   <div class="app-container">
-    <Navbar :mobile-menu-is-opened="mobileMenuIsOpened" @toggle-mobile-menu="toggleMobileMenu" />
+    <Navbar :mobile-menu-is-opened="mobileMenuIsOpened" class="navbar" @toggle-mobile-menu="toggleMobileMenu" />
 
-    <div v-if="!mobileMenuIsOpened">
+    <div v-if="!mobileMenuIsOpened" class="main-content">
       <Hero />
       <AppFooter />
     </div>
@@ -39,7 +39,7 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&family=Ubuntu:wght@400;500;700;&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 
@@ -56,5 +56,17 @@ html {
 
 .app-container {
   position: relative;
+
+  .main-content {
+    margin-top: 50px;
+  }
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: transparent;
+  z-index: 1;
 }
 </style>

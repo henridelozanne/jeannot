@@ -6,10 +6,29 @@
     <PictoGrid :filtered-pictos-by-cat="filtered" @open-modal="openModal" />
     <PictoModal v-if="modalVisible" :picto="currentPicto" @close-modal="modalVisible = false" />
     <AppFooter />
+
+    <transition ransition name="fade" appear>
+      <div v-if="scY > 300" id="pagetop" class="fixed right-0 bottom-0" @click="toTop">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="80"
+          height="80"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="#4a5568"
+          stroke-width="1"
+          stroke-linecap="square"
+          stroke-linejoin="arcs"
+        >
+          <path d="M18 15l-6-6-6 6" />
+        </svg>
+      </div>
+    </transition>
   </div>
 </template>
 
 <script>
+import _ from 'lodash'
 import Navbar from '../components/AppNavbar.vue'
 import Hero from '../components/AutictoHero.vue'
 import Search from '../components/AppSearch.vue'
@@ -31,6 +50,8 @@ export default {
 
   data () {
     return {
+      scTimer: 0,
+      scY: 0,
       allPictosByCat: [
         {
           label: 'Actions',
@@ -129,7 +150,30 @@ export default {
     }
   },
 
+  mounted () {
+    window.addEventListener('scroll', this.handleScroll)
+  },
+
   methods: {
+    conditionGoTop () {
+      this.scTimer = setTimeout(() => {
+        this.scY = window.scrollY
+        clearTimeout(this.scTimer)
+        this.scTimer = 0
+      })
+    },
+
+    handleScroll: _.debounce(function () {
+      this.conditionGoTop()
+    }, 300),
+
+    toTop () {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      })
+    },
+
     openModal (picto) {
       this.currentPicto = picto
       this.modalVisible = true
@@ -146,7 +190,7 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 
 body,
@@ -162,5 +206,23 @@ html {
 
 .app-container {
   position: relative;
+}
+
+#pagetop {
+  position: fixed;
+  opacity: 0.7;
+  bottom: 20px;
+  right: 20px;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  &:hover {
+      opacity: 0.5
+  }
 }
 </style>

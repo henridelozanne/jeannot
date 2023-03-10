@@ -30,6 +30,9 @@
             <span class="job"><span class="first-name">Jeanne</span>, Éducatrice spécialisée</span><br>
             « Je suis éducatrice spécialisée depuis 7 ans, j’ai tout de suite été attirée par le milieu de l’autisme. Je me suis d’abord formée à la méthode ABA pendant 2 ans et ai été supervisée tout au long par une psychologue ABA- BCBA. J’ai ensuite été formée à la méthode SACCADE pendant 3 ans et demi. J’ai pu créer de nombreux supports afin d’apporter dans ma pratique une technicité propre à la complexité de l’autisme, alliant connaissance du terrain et analyse neurocognitive. Je tenterai alors de vous accompagner au mieux dans tout le suivi de prise en charge de votre enfant.»
           </p>
+          <div class="wave">
+            'wavewavewave'
+          </div>
           <ToySVG />
         </div>
       </div>
@@ -82,6 +85,16 @@ section {
         width: 100%;
         max-width: 230px;
         min-width: 155px;
+      }
+
+      .wave {
+        text-decoration: underline;
+        text-decoration-color: rgb(46, 217, 166);
+        text-decoration-style: wavy;
+        color: transparent;
+        height: 10px;
+        margin: 0px 0 70px;
+        font-size: 30px;
       }
 
       .inner-ctn {
@@ -147,7 +160,7 @@ section {
       }
 
       .jeanne {
-        flex-direction: column-reverse;
+        flex-direction: column;
 
         .say {
           margin-right: 0;
@@ -238,6 +251,18 @@ section {
           }
         }
       }
+  }
+
+  @media screen and (max-width: 768px) {
+    h1 {
+      font-size: 1.9em !important;
+    }
+
+    h4 {
+      font-size: 1.3em !important;
+      display: inline-block;
+      margin: 15px auto 10px auto !important;
+    }
   }
 
   @media screen and (max-width: 700px) {

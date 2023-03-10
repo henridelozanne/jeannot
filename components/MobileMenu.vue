@@ -41,8 +41,8 @@ export default {
   padding-left: 0;
   margin-top: 0;
   font-size: 30px;
-  margin-top: -97px;
   background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
+  margin-bottom: 0;
 
   li:not(:last-of-type) {
     margin-bottom: 40px;
