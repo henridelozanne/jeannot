@@ -3,9 +3,17 @@
     <div class="hero">
       <h1>AUTISM & ADVICE</h1>
       <ul>
-        <li><a href="">Qui sommes-nous ?</a></li>
+        <li>
+          <router-link to="/">
+            Qui sommes-nous ?
+          </router-link>
+        </li>
+        <li>
+          <router-link to="auticto">
+            Auticto
+          </router-link>
+        </li>
         <li><a target="_blank" href="mailto:autismnadvice@gmail.com”">Contact</a></li>
-        <li><a href="#">Mentions légales</a></li>
       </ul>
     </div>
   </section>
@@ -20,6 +28,7 @@ export default {
 <style lang="scss" scoped>
 section {
   background: white;
+  box-shadow: 10px 0 10px rgba(205, 205, 205, 58%);
 
   .hero {
     margin: 0 auto;

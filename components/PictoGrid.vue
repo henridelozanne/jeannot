@@ -38,7 +38,7 @@ export default {
 <style lang="scss" scoped>
 .container {
   width: 80%;
-  margin: 0 auto;
+  margin: 0 auto 50px;
   max-width: 1200px;
 
   .category-title {
@@ -92,13 +92,8 @@ export default {
         background: rgb(240, 248, 250);
 
         h3 {
-          // color: rgb(35, 105, 210);
           color: rgb(10, 59, 44);
         }
-
-        // img {
-          // filter: invert(16%) sepia(29%) saturate(1098%) hue-rotate(111deg) brightness(98%) contrast(95%);
-        // }
       }
     }
 
