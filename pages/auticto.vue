@@ -1,11 +1,15 @@
 <template>
   <div class="app-container">
-    <Navbar />
-    <Hero />
-    <Search :filtered-pictos-by-cat="allPictosByCat" @input="updateQueryString" @select-category="selectCategory" />
-    <PictoGrid :filtered-pictos-by-cat="filtered" @open-modal="openModal" />
-    <PictoModal v-if="modalVisible" :picto="currentPicto" @close-modal="modalVisible = false" />
-    <AppFooter />
+    <Navbar :mobile-menu-is-opened="mobileMenuIsOpened" @toggle-mobile-menu="toggleMobileMenu" />
+    <div v-if="!mobileMenuIsOpened">
+      <Hero />
+      <Search :filtered-pictos-by-cat="allPictosByCat" @input="updateQueryString" @select-category="selectCategory" />
+      <PictoGrid :filtered-pictos-by-cat="filtered" @open-modal="openModal" />
+      <PictoModal v-if="modalVisible" :picto="currentPicto" @close-modal="modalVisible = false" />
+      <AppFooter />
+    </div>
+
+    <MobileMenu v-else @toggle-mobile-menu="toggleMobileMenu" />
 
     <transition ransition name="fade" appear>
       <div v-if="scY > 300" id="pagetop" class="fixed right-0 bottom-0" @click="toTop">
@@ -50,6 +54,7 @@ export default {
 
   data () {
     return {
+      mobileMenuIsOpened: false,
       scTimer: 0,
       scY: 0,
       allPictosByCat: [
@@ -155,6 +160,10 @@ export default {
   },
 
   methods: {
+    toggleMobileMenu (value) {
+      this.mobileMenuIsOpened = value
+    },
+
     conditionGoTop () {
       this.scTimer = setTimeout(() => {
         this.scY = window.scrollY
@@ -165,7 +174,7 @@ export default {
 
     handleScroll: _.debounce(function () {
       this.conditionGoTop()
-    }, 300),
+    }, 100),
 
     toTop () {
       window.scrollTo({

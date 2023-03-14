@@ -1,5 +1,5 @@
 <template>
-  <ul class="mobile-menu">
+  <ul class="mobile-menu" :class="negativeMargin ? 'negative-margin' : ''">
     <li @click="closeMenu">
       <router-link to="/">
         Présentation
@@ -21,6 +21,12 @@
 <script>
 export default {
   name: 'MobileMenu',
+
+  computed: {
+    negativeMargin () {
+      return this.$route.name === 'auticto'
+    }
+  },
 
   methods: {
     closeMenu () {
@@ -51,6 +57,10 @@ export default {
   li a {
     color: rgb(64, 64, 64);
     text-decoration: none;
+  }
+
+  &.negative-margin {
+    margin-top: -97px;
   }
 }
 </style>

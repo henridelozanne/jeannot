@@ -1,5 +1,5 @@
 <template>
-  <nav :class="{'mobile-menu-opened': mobileMenuIsOpened}">
+  <nav :class="{'mobile-menu-opened': mobileMenuIsOpened, 'auticto-page': autictoPage }">
     <div class="logo-and-text" @click="goToHome">
       <div class="logo-ctn">
         <div class="circle" />
@@ -45,6 +45,12 @@ export default {
     mobileMenuIsOpened: {
       type: Boolean,
       default: false
+    }
+  },
+
+  computed: {
+    autictoPage () {
+      return this.$route.name === 'auticto'
     }
   },
 
@@ -104,6 +110,10 @@ nav {
     .logo-and-text {
       opacity: 0;
     }
+  }
+
+  &.auticto-page {
+    box-shadow: 0 0 10px rgb(0 0 0 / 43%);
   }
 
   &:not(.mobile-menu-opened) {

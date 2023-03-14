@@ -19,19 +19,26 @@
       <div class="ctnr">
         <div class="temoignage-ctn evelyn">
           <SolutionSVG />
-          <p class="say">
-            <span class="job"><span class="first-name">Evelyn</span>, Psychologue clinicienne</span><br>
+          <div class="say">
+            <div class="job-ctn">
+              <div class="dot" />
+              <span class="job"><span class="first-name">Evelyn</span>, Psychologue clinicienne</span>
+            </div>
+
             « Je suis psychologue clinicienne depuis plus de 10 ans avec 8 ans de spécialisation en autisme. Sensibilisée et supervisée à la pratique de l’ABA pendant 3 années, j’ai ensuite été formée pendant 3 ans et demi à la méthode SACCADE. Spécialiste de l’autisme, je mets en avant mes compétences de psychologue (test psychologique, entretien parental, analyse du fonctionnement de la personne autiste, restitution sous forme de bilan…). J’essayerai de vous apporter soutien et écoute tout au long de notre alliance. »
-          </p>
+          </div>
         </div>
 
         <div class="temoignage-ctn jeanne">
-          <p class="say">
-            <span class="job"><span class="first-name">Jeanne</span>, Éducatrice spécialisée</span><br>
+          <div class="say">
+            <div class="job-ctn">
+              <div class="dot" />
+              <span class="job"><span class="first-name">Jeanne</span>, Éducatrice spécialisée</span>
+            </div>
             « Je suis éducatrice spécialisée depuis 7 ans, j’ai tout de suite été attirée par le milieu de l’autisme. Je me suis d’abord formée à la méthode ABA pendant 2 ans et ai été supervisée tout au long par une psychologue ABA- BCBA. J’ai ensuite été formée à la méthode SACCADE pendant 3 ans et demi. J’ai pu créer de nombreux supports afin d’apporter dans ma pratique une technicité propre à la complexité de l’autisme, alliant connaissance du terrain et analyse neurocognitive. Je tenterai alors de vous accompagner au mieux dans tout le suivi de prise en charge de votre enfant.»
-          </p>
+          </div>
           <div class="wave">
-            'wavewavewave'
+            'wavewavew'
           </div>
           <ToySVG />
         </div>
@@ -112,7 +119,6 @@ section {
         .job {
           font-style: italic;
           display: inline-block;
-          margin: 10px 0;
 
           .first-name {
             font-weight: bold;
@@ -191,8 +197,36 @@ section {
       text-align: initial;
     }
 
-    p, a {
+    p, a, .say {
       color: #646668;
+    }
+
+    .say {
+      margin-top: 25px;
+
+      .job-ctn {
+        margin-bottom: 15px;
+      }
+
+      @media screen and (max-width: 768px) {
+        .job-ctn {
+          display: flex;
+          align-items: center;
+          border-bottom: 1px solid rgb(46, 217, 166);
+          padding-bottom: 0px;
+          width: fit-content;
+        }
+
+        .dot {
+          border-radius: 50%;
+          background: rgb(46, 217, 166);
+          width: 10px;
+          height: 10px;
+          margin-right: 10px;
+        }
+
+      }
+
     }
 
     .next {
@@ -271,5 +305,15 @@ section {
     }
   }
 
+}
+
+.wave {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .wave {
+    display: block;
+  }
 }
 </style>
