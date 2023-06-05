@@ -64,7 +64,7 @@ export default {
         },
         {
           label: 'Activités',
-          pictos: ['activité théâtre', 'arts plastiques', 'classe', 'courses', 'danse', 'équithérapie', 'jardinage', 'jouer', 'musique', 'pause', 'piscine', 'promenade', 'psychomotricité', 'regroupement', 'sport', 'travailler']
+          pictos: ['activité théâtre', 'arts plastiques', 'classe', 'courses', 'danse', 'jardinage', 'jouer', 'musique', 'pause', 'piscine', 'promenade', 'psychomotricité', 'regroupement', 'sport', 'travailler']
         },
         {
           label: 'Alimentaire',
@@ -96,11 +96,11 @@ export default {
         },
         {
           label: 'Hygiène',
-          pictos: ['brosse à dents', 'douche', 'laver les mains', 'prendre le bain', 'toilettes']
+          pictos: ['brosse à dents', 'douche', 'laver les mains', 'prendre le bain']
         },
         {
           label: 'Lieux',
-          pictos: ['au travail', 'cour haut', 'cour des petits', 'cour du bas', 'école', 'hôpital', 'infirmerie', 'maison', 'récréation', 'salle de consultation', 'salle de retour au calme', 'salle polyvalente']
+          pictos: ['au travail', 'école', 'hôpital', 'infirmerie', 'maison', 'récréation', 'salle de consultation']
         },
         {
           label: 'Matières scolaires',
