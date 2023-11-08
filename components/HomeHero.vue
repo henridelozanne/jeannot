@@ -25,7 +25,7 @@
               <span class="job"><span class="first-name">Evelyn</span>, Psychologue clinicienne</span>
             </div>
 
-            « Je suis psychologue clinicienne depuis plus de 10 ans avec 8 ans de spécialisation en autisme. Sensibilisée et supervisée à la pratique de l’ABA pendant 3 années, j’ai ensuite été formée pendant 3 ans et demi à la méthode SACCADE. Spécialiste de l’autisme, je mets en avant mes compétences de psychologue (test psychologique, entretien parental, analyse du fonctionnement de la personne autiste, restitution sous forme de bilan…). J’essayerai de vous apporter soutien et écoute tout au long de notre alliance. »
+            « Je suis psychologue clinicienne depuis plus de 10 ans avec 8 ans de spécialisation en autisme. Sensibilisée et supervisée à la pratique de l’ABA pendant 3 années, j’ai ensuite été formée pendant 3 ans et demi à la méthode SACCADE*. Spécialiste de l’autisme, je mets en avant mes compétences de psychologue (test psychologique, entretien parental, analyse du fonctionnement de la personne autiste, restitution sous forme de bilan…). J’essayerai de vous apporter soutien et écoute tout au long de notre alliance. »
           </div>
         </div>
 
@@ -35,7 +35,7 @@
               <div class="dot" />
               <span class="job"><span class="first-name">Jeanne</span>, Éducatrice spécialisée</span>
             </div>
-            « Je suis éducatrice spécialisée depuis 7 ans, j’ai tout de suite été attirée par le milieu de l’autisme. Je me suis d’abord formée à la méthode ABA pendant 2 ans et ai été supervisée tout au long par une psychologue ABA- BCBA. J’ai ensuite été formée à la méthode SACCADE pendant 3 ans et demi. J’ai pu créer de nombreux supports afin d’apporter dans ma pratique une technicité propre à la complexité de l’autisme, alliant connaissance du terrain et analyse neurocognitive. Je tenterai alors de vous accompagner au mieux dans tout le suivi de prise en charge de votre enfant.»
+            « Je suis éducatrice spécialisée depuis 7 ans, j’ai tout de suite été attirée par le milieu de l’autisme. Je me suis d’abord formée à la méthode ABA pendant 2 ans et ai été supervisée tout au long par une psychologue ABA- BCBA. J’ai ensuite été formée à la méthode SACCADE* pendant 3 ans et demi. J’ai pu créer de nombreux supports afin d’apporter dans ma pratique une technicité propre à la complexité de l’autisme, alliant connaissance du terrain et analyse neurocognitive. Je tenterai alors de vous accompagner au mieux dans tout le suivi de prise en charge de votre enfant.»
           </div>
           <div class="wave">
             'wavewavew'
@@ -46,6 +46,10 @@
 
       <div class="next">
         <p>Suite à notre collaboration de 5 années, nous avons décidé de continuer l’aventure ensemble car c’est dans la complémentarité de nos métiers et de nos connaissances qu’il nous a semblé avoir les meilleurs résultats. Le cabinet Autism & Advice met un point d'honneur à suivre les recommandations de l' <a target="_blank" href="https://www.has-sante.fr/">HAS</a>.</p>
+      </div>
+
+      <div class="precision">
+        <p>*: Le cabinet Autism&Advice ne pratique aucune formation, ni supervision concernant la méthode saccade. Seul l’organisme <a href="https://saccade.ca/" target="_blank">Saccade.ca</a> est habilité à former et à superviser leurs méthodes.</p>
       </div>
     </div>
   </section>
@@ -233,6 +237,11 @@ section {
       font-size: 1.1em;
       margin-top: 50px;
       line-height: 1.5;
+    }
+
+    .precision {
+      font-size: 0.8em;
+      margin-top: 50px;
     }
 
     .auticto-word {
